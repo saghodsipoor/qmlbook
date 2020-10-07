@@ -113,7 +113,7 @@ QML and JavaScript (also known as ECMAScript) are best friends. In the *JavaScri
 .. note::
 
     The difference between the QML ``:`` (binding) and the JavaScript ``=`` (assignment) is, that the binding is a contract and keeps true over the lifetime of the binding, whereas the JavaScript assignment (``=``) is a one time value assignment.
-    The lifetime of a binding ends, when a new binding is set to the property or even when a JavaScript value is assigned is to the property. For example, a key handler setting the text property to an empty string would destroy our increment display::
+    The lifetime of a binding ends, when a new binding is set to the property or even when a JavaScript value is assigned to the property. For example, a key handler setting the text property to an empty string would destroy our increment display::
 
         Keys.onEscapePressed: {
             label.text = ''
